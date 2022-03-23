@@ -14,6 +14,7 @@ const notificationElement = document.querySelector(".notification");
 
 // Get the input field
 
+
 var input = document.getElementById("search");
 
 let city = "";
@@ -26,11 +27,12 @@ let longitude = 0.0;
 
 // Execute a function when the user releases a key on the keyboard
 
+
 input.addEventListener("keyup", function (event) {
 
   // Number 13 is the "Enter" key on the keyboard
 
-  if (event.keyCode === 13) {
+  if (event.keyCode === 14) {
 
     // Cancel the default action, if needed
 
@@ -110,7 +112,7 @@ function setPosition(position) {
 
 locationIcon.addEventListener("click", function (event) {
 
-  console.log("hi");
+  console.log("Hi");
 
   getWeather(latitude, longitude);
 
